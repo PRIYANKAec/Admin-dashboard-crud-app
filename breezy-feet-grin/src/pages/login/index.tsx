@@ -1,3 +1,4 @@
+import { authCredentials } from "../../providers";
 import { AuthPage } from "@refinedev/antd";
 
 export const Login = () => {
@@ -5,7 +6,7 @@ export const Login = () => {
     <AuthPage
       type="login"
       formProps={{
-        initialValues: { email: "priyankaa261103@gmail.com", password: "demodemo" },
+        initialValues: authCredentials,
       }}
     />
   );
