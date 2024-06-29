@@ -8,7 +8,7 @@ import { API_URL, dataProvider } from "./data";
  * For demo purposes and to make it easier to test the app, you can use the following credentials:
  */
 export const authCredentials = {
-  email: "priyankaa261103",
+  email: "priyankaa261103@gmail.com",
   password: "error404",
 };
 
@@ -63,6 +63,7 @@ export const authProvider: AuthProvider = {
     if (error.statusCode === "UNAUTHENTICATED") {
       return {
         logout: true,
+        ...error,
       };
     }
 
@@ -100,7 +101,7 @@ export const authProvider: AuthProvider = {
     const accessToken = localStorage.getItem("access_token");
 
     try {
-      const { data } = await dataProvider.custom<{ me: User }>({
+      const { data } = await dataProvider.custom<{ me: any }>({
         url: API_URL,
         method: "post",
         headers: accessToken
