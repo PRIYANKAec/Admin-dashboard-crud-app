@@ -1,4 +1,4 @@
-import { Layout,  Space } from "antd"
+import { Layout, Space } from "antd"
 import CurrentUser from "./current-user"
 
 const Header = () => {
@@ -12,16 +12,14 @@ const Header = () => {
     position: "sticky",
     top: 0,
     zIndex: 999,
-    }
+  }
+
   return (
-      <Layout.Header style={headerStyles}>
-        <Space
-        align="center"
-        size= "middle"
-        >
+    <Layout.Header style={headerStyles}>
+      <Space align="center" size="middle">
         <CurrentUser />
-        </Space>
-      </Layout.Header>     
+      </Space>
+    </Layout.Header>
   )
 }
 

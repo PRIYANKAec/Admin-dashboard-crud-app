@@ -10,11 +10,13 @@ import { HttpError, getDefaultFilter, useGo } from '@refinedev/core'
 import { GetFieldsFromList } from '@refinedev/nestjs-query';
 import { Input, Space, Table } from 'antd';
 
-
 export const CompanyList = ({ children }: React.PropsWithChildren) => {
   const go = useGo();
-
-  const { tableProps, filters } = useTable({
+  const { tableProps, filters } = useTable<
+    GetFieldsFromList<CompaniesListQuery>,
+    HttpError,
+    GetFieldsFromList<CompaniesListQuery>
+  >({
     resource: 'companies',
     onSearch: (values) => {
       return [
@@ -49,7 +51,7 @@ export const CompanyList = ({ children }: React.PropsWithChildren) => {
       gqlQuery: COMPANIES_LIST_QUERY
     }
   })
-  
+
   return (
   <div>
     <List
@@ -89,11 +91,10 @@ export const CompanyList = ({ children }: React.PropsWithChildren) => {
           )}
           render={(value, record) => (
             <Space>
-            <CustomAvatar shape='square' name={record.name} src={record.avatarUrl} />
-
-           <Text style={{whiteSpace: "nowrap"}}>
-            {record.name}
-           </Text>
+              <CustomAvatar shape="square" name={record.name} src={record.avatarUrl} />
+              <Text style={{ whiteSpace: 'nowrap' }}>
+              {record.name}
+              </Text>
             </Space>
           )}
         />
