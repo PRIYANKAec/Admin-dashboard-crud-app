@@ -1,19 +1,33 @@
-# breezy-feet-grin
+# CRUD Dashboard Application
+CRUD dashboard application is based on  the GraphQl and Refine. React-based CRM dashboard featuring comprehensive authentication, antd charts, sales management, and a fully operational kanban board with live updates for real-time actions across all devices.
 
-<div align="center" style="margin: 30px;">
-    <a href="https://refine.dev">
-    <img alt="refine logo" src="https://refine.ams3.cdn.digitaloceanspaces.com/readme/refine-readme-banner.png">
-    </a>
-</div>
-<br/>
+![MasterHead](https://github.com/PRIYANKAec/Admin-dashboard-crud-app/blob/main/breezy-feet-grin/OutputImages/LoginPage.png)
 
-This [Refine](https://github.com/refinedev/refine) project was generated with [create refine-app](https://github.com/refinedev/refine/tree/master/packages/create-refine-app).
 
-## Getting Started
+## Tech Stacks 
+ - React.js
+- TypeScript
+- GraphQL
+- Ant Design
+- Refine
+- Codegen
+- Vite
+- Vercel (deployment)
 
-A React Framework for building internal tools, admin panels, dashboards & B2B apps with unmatched flexibility ✨
+## Key Features
+👉 **Authentication**: Streamlined user onboarding with secure login and signup features; robust password recovery ensures a seamless authentication process.
 
-Refine's hooks and components simplifies the development process and eliminates the repetitive tasks by providing industry-standard solutions for crucial aspects of a project, including authentication, access control, routing, networking, state management, and i18n.
+👉 **Authorization**: Fine-grained access controls manage user actions, ensuring data security and permissions.
+
+👉 **Home Page**: Dynamic dashboard featuring interactive charts for key metrics; real-time updates on activities, upcoming events, and a business insights dashboard.
+
+👉 **Companies Page**: Comprehensive CRUD functionality for company management and sales processes; detailed profiles with add/edit capabilities, associated contacts/leads, pagination, and field-specific search.
+
+👉 **Kanban Board**: Collaborative task management board with real-time updates; customizable options include due dates, markdown descriptions, and multi-assignees, with tasks dynamically shifting across boards.
+
+👉 **Account Settings**: Personalized user profile management for tailored application preferences; streamlined configuration options ensure a customized user experience.
+
+👉 **Responsive Design**: Fully responsive layout across devices for consistent accessibility; fluid design adapts seamlessly to various screen sizes, ensuring optimal user interaction.
 
 ## Available Scripts
 
@@ -34,16 +48,9 @@ Refine's hooks and components simplifies the development process and eliminates 
 ```bash
     npm run start
 ```
-
-## Learn More
-
-To learn more about **Refine**, please check out the [Documentation](https://refine.dev/docs)
-
-- **NestJS Query Data Provider** [Docs](https://refine.dev/docs/data/packages/nestjs-query/)
-- **Ant Design** [Docs](https://refine.dev/docs/ui-frameworks/antd/tutorial/)
-- **React Router** [Docs](https://refine.dev/docs/core/providers/router-provider/)
-- **Custom Auth Provider** [Docs](https://refine.dev/docs/core/providers/auth-provider/)
-
+## Deployment Link
+ https://admin-dashboard-crud-7cqs94gqr-priyankaecs-projects.vercel.app
+ 
 ## License
 
 MIT
