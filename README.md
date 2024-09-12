@@ -2,6 +2,9 @@
 
 Welcome to the CRM System project built using Refine, a powerful React meta-framework designed for CRUD-heavy web applications. This project focuses on managing customer interactions, sales processes, and data analysis to help streamline your business operations.
 
+[Screencast from 2024-09-12 10-35-19.webm](https://github.com/user-attachments/assets/7b76d1e9-b448-489b-b681-9aff5ea285c7)
+
+
 ## 🚀 Features
 
 - **Customer Management** 🧑‍🤝‍🧑
